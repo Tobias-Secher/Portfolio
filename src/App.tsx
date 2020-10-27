@@ -54,7 +54,7 @@ const App = () => {
           <main className={'wc__content'}>
             <Switch>
               {routes}
-              <Route path={'/'}>
+              <Route exact={true} path={'/'}>
                 <Home />
               </Route>
             </Switch>

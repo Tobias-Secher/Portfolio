@@ -1,5 +1,6 @@
 @import "../../styles/colors.scss";
 
+
 .menu {
     list-style: none;
     padding: 0;
@@ -13,6 +14,27 @@
 
         &.item {
             & .item__link {
+
+                &--active-blue >  .link__icon {
+                    color: blue() !important;
+                }
+
+                &--active-green  > .link__icon {
+                    color: green() !important;
+                }
+
+                &--active-purple  > .link__icon {
+                    color: purple() !important;
+                }
+
+                &--active-orange  > .link__icon {
+                    color: orange() !important;
+                }
+
+                &--active-red  > .link__icon {
+                    color: red() !important;
+                }
+
                 &.link {
                     display: flex;
                     flex-direction: column;
