@@ -1,0 +1,61 @@
+@import "../../styles/colors.scss";
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & .menu__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px;
+
+        &.item {
+            & .item__link {
+                &.link {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    & .link__icon {
+                        height: 24px;
+                        width: 24px;
+                        margin-bottom: 0.3em;
+                        color: #bec1c6;
+                    }
+
+                    & .link__label {
+                        font: 500 0.75rem/1.33333333 "Google Sans", Roboto, Arial, sans-serif;
+                        color: #5f6368;
+                    }
+
+                    &:hover .link__icon--blue {
+                        color: blue();
+                    }
+
+                    &:hover .link__icon--green {
+                        color: green();
+                    }
+
+                    &:hover .link__icon--purple {
+                        color: purple();
+                    }
+
+                    &:hover .link__icon--orange {
+                        color: orange();
+                    }
+
+                    &:hover .link__icon--red {
+                        color: red();
+                    }
+                }
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}

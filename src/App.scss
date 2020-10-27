@@ -1,5 +1,6 @@
 @import "./styles/colors.scss";
 
+
 .wrapper {
   --header-height: 100px;
   width: 100%;
@@ -32,11 +33,11 @@
       overflow-x: auto;
 
       & .wc__menu {
-        background-color: red;
+        // background-color: red;
       }
 
       & .wc__content {
-        background-color: green;
+        padding: 1em;
       }
     }
   }
