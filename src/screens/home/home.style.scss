@@ -1,0 +1,51 @@
+.home-wrapper {
+    width: clamp(10em, 100%, 1000px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+
+    & .home-wrapper__info {
+        background-color: #f4f4f4;
+        padding: 3em;
+
+        & h1 {
+            font-size: 37px;
+            font-weight: lighter;
+        }
+
+        & p {
+            color: #7f7f7f;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+        }
+
+        & button{
+            border: none;
+            background-color: #2A2A2A;
+            color: white;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+
+    & .home-wrapper__image {
+        background-image: url(../../assets/tobias-secher.JPG);
+        background-position: center;
+        background-size: cover;
+
+        &::after {
+            content: " ";
+        }
+    }
+
+    & .home-wrapper__skills{
+        & h4{
+            font-weight: normal;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
