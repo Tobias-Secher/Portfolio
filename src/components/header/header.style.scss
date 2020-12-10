@@ -1,63 +1,72 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
-.header{
+.header {
     display: grid;
     grid-template-columns: 8em auto;
 
-    & .link{
-        font-family: 'Montserrat', sans-serif;
-        letter-spacing: .01rem;
+    & .link {
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 0.01rem;
         padding: 1em;
         display: flex;
         align-items: center;
-        color:fontColorPrimary();
-        
+        color: fontColorPrimary();
 
-        &:hover{
-            background-color: #E8F2F6;
+        &:hover {
+            background-color: #e8f2f6;
             color: fontColorAccent();
         }
     }
 
-    & .header__title{
+    & .header__title {
         display: block;
         font-weight: 700;
-        letter-spacing: .05rem !important;
+        letter-spacing: 0.05rem !important;
 
-        & div:nth-child(2){
+        & div:nth-child(2) {
             padding-left: 0.7em;
-            color: rgba(0,0,0,0.5);
+            color: rgba(0, 0, 0, 0.5);
         }
     }
 
-    & .header__menu{
+    & .header__menu {
         float: right;
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: flex-end;
 
-        & li{
+        & li {
             display: flex;
             list-style: none;
 
-            & a{
-               position: relative;
+            & a {
+                position: relative;
 
-               &:hover{
-                   &::after{
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    height: 3px;
-                    background-color: fontColorAccent();
-                    left: 0;
-                    bottom: 0;
-                   }
-               }
-               
+                &:hover {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        background-color: fontColorAccent();
+                        left: 0;
+                        bottom: 0;
+                    }
+                }
+
+                &.active-link {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        background-color: fontColorAccent();
+                        left: 0;
+                        bottom: 0;
+                    }
+                }
             }
-
         }
     }
 }
