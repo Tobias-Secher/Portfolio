@@ -1,0 +1,36 @@
+@import "../../styles/colors.scss";
+
+.skill-wrapper {
+    background-color: white;
+    border-radius: 40px;
+    border: 1px solid #e4e4e4;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 75px 30px auto;
+    padding: 2em 1em 1em 1em;
+
+    & .skill-wrapper__icon {
+    }
+
+    & .skill-wrapper__title {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    & .skill-wrapper__list {
+        padding: 0;
+        margin: 2em 0em 0em 0em;
+    }
+}
+
+.skill {
+    list-style: none;
+    padding: 0.5em 0em;
+
+    & .skill__icon {
+        color: fontColorAccent();
+        margin-right: 1em;
+    }
+}

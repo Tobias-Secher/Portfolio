@@ -1,27 +1,15 @@
-@function primary() {
-    @return #68c0fb;
+@function fontColorPrimary() {
+    @return #434E5E;
 }
 
-@function secondary() {
-    @return #5f6368;
+@function fontColorAccent() {
+    @return rgb(65, 164, 245);
 }
 
-@function blue() {
-    @return #3092EC;
+@function fontColorAccentAplha($alpha) {
+    @return rgba(65, 164, 245, $alpha);
 }
 
-@function green() {
-    @return #26fb9a;
-}
-
-@function purple() {
-    @return #ab6cfe;
-}
-
-@function orange() {
-    @return #fcb248;
-}
-
-@function red() {
-    @return #F15B28;
-}
+// @function primaryBlue() {
+//     @return #0096cc;
+// }

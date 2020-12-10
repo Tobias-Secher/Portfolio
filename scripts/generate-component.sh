@@ -1,16 +1,11 @@
 #!/bin/sh
 
-while getopts c: flag
-do
-    case "${flag}" in
-        c) name=${OPTARG};;
-    esac
-done
+$1
 
-cd ../src/components/ && #&& touch $name.txt
-mkdir ./$name &&
-cd $name &&
-touch $name.component.tsx
-touch $name.style.scss
-cd ../../models
-touch $name.model.ts
+cd ../src/components && 
+mkdir $1 &&
+cd $1 &&
+touch $1.component.tsx &&
+echo 'import React from "react";' >> $1.component.tsx &&
+echo 'import "./'$1.style.scss'";'  >> $1.component.tsx &&
+touch $1.style.scss 
