@@ -5,11 +5,12 @@
     border-radius: 40px;
     border: 1px solid #e4e4e4;
     display: grid;
-    justify-content: center;
+    // justify-content: center;
     grid-template-rows: 75px 30px auto;
     padding: 2em 1em 1em 1em;
 
     & .skill-wrapper__icon {
+        height: 75px;
     }
 
     & .skill-wrapper__title {
@@ -32,5 +33,8 @@
     & .skill__icon {
         color: fontColorAccent();
         margin-right: 1em;
+    }
+
+    & .skill__text{
     }
 }

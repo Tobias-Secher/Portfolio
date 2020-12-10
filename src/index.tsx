@@ -6,6 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCheck, faCodeBranch, faHome } from '@fortawesome/free-solid-svg-icons';
 
+
+
+
 library.add(faHome);
 library.add(faCodeBranch);
 library.add(faCheck);

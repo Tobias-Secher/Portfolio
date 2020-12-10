@@ -21,8 +21,8 @@ const SkillList = (props: props): JSX.Element => {
 
     return (
         <div className="skill-wrapper">
-            <div className="skill-wrapper__icon" style={props.skill.icon.style} >
-                <img style={{ width: '100%' }} src={require(`../../assets/${props.skill.icon.name}`)} />
+            <div className="skill-wrapper__icon" style={{display: props.skill.iconUseFlex ? 'flex' : ''}}  >
+                <img style={{ width: '100%', height: '100%' }} src={`${props.skill.icon}`} />
             </div>
             <h4 className="skill-wrapper__title">
                 {props.skill.title}
