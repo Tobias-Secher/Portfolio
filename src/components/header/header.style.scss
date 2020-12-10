@@ -1,0 +1,43 @@
+.header{
+    display: grid;
+    grid-template-columns: 11em auto;
+
+    & .link{
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: .01rem;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        color: #2e2e2e;
+        
+
+        &:hover{
+            background-color: #E8F2F6;
+            color: #007199;
+        }
+    }
+
+    & .header__title{
+        display: block;
+        font-weight: 700;
+    }
+
+    & .header__menu{
+        float: right;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        & li{
+            display: inline-block;
+            list-style: none;
+
+            & a{
+               
+            }
+
+        }
+    }
+}

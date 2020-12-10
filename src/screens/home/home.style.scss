@@ -1,0 +1,13 @@
+.home{
+    & .home__intro{
+        min-height: 15em;
+        background-color: #F5F8FA;
+        padding: 1em;
+
+        &.hi{
+            & .hi__image{
+                
+            }
+        }
+    }
+}
