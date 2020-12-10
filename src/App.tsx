@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import Header from './components/header/header.components';
 import Home from './screens/home/home.component';
+import WorkTimeline from './screens/work-timeline/work-timeline.component';
 
 const App = () => {
 
@@ -15,7 +16,8 @@ const App = () => {
           <Header />
         </div>
         <div className="wrapper__rutes">
-          <Route path={'/'} component={Home} />
+          <Route exact={true} path={'/work'} component={WorkTimeline} />
+          <Route exact={true} path={'/'} component={Home} />
         </div>
       </div>
     </Router>

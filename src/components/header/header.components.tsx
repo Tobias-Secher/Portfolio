@@ -7,9 +7,7 @@ const Header = (): JSX.Element => {
         <div className="header">
             <Link to={'/'} className="header__title link"><div>TOBIAS</div> <div>SECHER</div></Link>
             <ul className="header__menu">
-                <li><Link className="link" to={'/'}>Hej</Link></li>
-                <li><Link className="link" to={'/'}>Med</Link></li>
-                <li><Link className="link" to={'/'}>Dig</Link></li>
+                <li><Link className="link" to={'/work'}>Work</Link></li>
             </ul>
         </div>
     )

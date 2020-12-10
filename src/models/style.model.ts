@@ -477,7 +477,6 @@ export const buildStyleToString = (style: StyleModel): string => {
     const json = JSON.parse(JSON.stringify(style))
 
     Object.keys(json).forEach((key: string) => {
-        console.log(json[key])
         const split: string[] = key.split(/(?=[A-Z])/);
         str += `${split.join('-')}:${json[key]}`
     })
